@@ -6,7 +6,15 @@
 </head>
 <body>
 <script>
-
+function giaiPhuongTrinh(a, b) {
+    if (a === 0 && b === 0){
+        console.log("Phương trình có vô số nghiệm")
+    } else if (a === 0 && b !== 0){
+        console.log("Phương trình vô nghiệm")
+    } else
+        console.log("Phương trình có nghiệm : "+(-b/a))
+}
+(giaiPhuongTrinh(5, 8))
 </script>
 </body>
 </html>
