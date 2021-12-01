@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [2, 4, 1, 3, 14, 6, 9]
+    let number = +prompt("Nhập giá trị cần kiểm tra :")
+    let check = findIndex(number, array);
+
+    function findIndex(number, array) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === number) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    if (check === -1) {
+        console.log("phần tử không nằm trong mảng")
+    } else {
+        console.log(`Phần tử nằm ở vị trí ${check} trong mảng `)
+    }
+</script>
+</body>
+</html>
